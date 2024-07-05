@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>food-order</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+
+  <script>
+    let CartQuantity=0;
+    let name='Ganesha';
+    console.log(`My name is:${name}`);
+    let cost=5+2*3+9;
+    console.log(`cost of food:$${cost}`);
+   let Tax=cost*0.1;
+    console.log(`Tax(10%):$${Tax}`);
+   let  totalCost=cost+Tax;
+     console.log(`Total Cost:$${totalCost}`);
+     const totalCost1 = cost + tax;
+      console.log(`Total cost: $${totalCost1}`);
+  </script>
+<button onclick="CartQuantity+=4;
+console.log(CartQuantity);">+4</button>
+
+<button onclick="CartQuantity+=5;
+console.log(CartQuantity);">+5</button>
+
+<button onclick="CartQuantity--;
+console.log(CartQuantity);">Remove from cart</button>
+
+<button onclick="CartQuantity-=2;
+console.log(CartQuantity);">-2</button>
+
+<button onclick="CartQuantity-=3;
+console.log(CartQuantity);">-3</button>
+  </body>
+
+</html>

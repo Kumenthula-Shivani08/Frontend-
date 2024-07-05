@@ -1,0 +1,80 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+     function pickaMove(){
+      let computerMove ='';
+
+      const randomNumber=Math.random();
+    if(randomNumber>=0 && randomNumber<1/3)
+    {
+      computerMove='rock';
+    }
+    else if
+    (randomNumber>=1/3 && randomNumber<2/3)
+    {
+      computerMove='paper';
+    }
+    else if(randomNumber>=2/3 && randomNumber<1)
+    {
+      computerMove='scissor';
+    }
+    console.log(computerMove);
+    return computerMove;
+
+      }
+
+    </script>
+   <p>Rock Paper scissor</p>
+    <button  onclick="
+    
+const computerMove=pickaMove()
+    let result='';
+    if(computerMove==='rock'){
+      result='Tie.';
+    }
+    else if(computerMove==='paper'){
+      result='you lose.';
+    }
+    else if(computerMove==='scissor'){
+      result='you win.';
+    }
+    alert(`You picked rock.Computer picked ${computerMove}.${result}`)
+    ">Rock</button>
+
+    <button
+    onclick="
+  const computerMove=pickaMove()
+    
+    let result1='';
+    if(computerMove==='rock'){
+      result1='you win.';
+    }
+    else if(computerMove==='paper'){
+      result1='Tie.';
+    }
+    else if(computerMove==='scissor'){
+      result1='you lose.';
+    }
+    alert(`You picked paper.Computer picked ${computerMove}.${result1}`)">Paper</button>
+
+    <button onclick="
+   pickaMove();
+    
+    let result2='';
+    if(computerMove==='rock'){
+      result2='you lose.';
+    }
+    else if(computerMove==='paper'){
+      result2='you win';
+    }
+    else if(computerMove==='scissor'){
+      result2='Tie.';
+    }
+    alert(`You picked scissor.Computer picked ${computerMove}.${result2}`)">scissor</button>
+
+
+
+  </body>
+</html>
