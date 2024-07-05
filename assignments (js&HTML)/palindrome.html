@@ -1,0 +1,30 @@
+<html>
+  <head>
+  </head>
+  <body>
+  <label>Enter a string</label>
+  <input type="text" id="input-string">
+  <button onclick="checkPalindrom()">check</button>  
+  <p id="result"></p>
+  <script>
+    function isPalindrome(str){
+    str=str.toLowerCase().replace(/[\W_]/g,'');
+  for(let i=0;i<str.length/2;i++){
+    if(str[i]!==str[str.length-1-i]){
+      return false;
+    }
+  }
+  return true;
+  }
+  function checkPalindrom(){
+    const input=document.getElementById('input-string').value;
+    const result=document.getElementById('result');
+    if (isPalindrome(input)) {
+        result.textContent = `"${input}" is a palindrome.`;
+      } else {
+        result.textContent = `"${input}" is not a palindrome.`;
+      }
+    }
+  </script>
+  </body>
+</html>

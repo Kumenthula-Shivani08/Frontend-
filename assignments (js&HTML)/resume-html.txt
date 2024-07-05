@@ -1,0 +1,76 @@
+=>Resume preparation with HTML?
+program:
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resume.css" />
+    <title>Resume</title>
+</head>
+
+<body>
+    <div id="resume">
+        <h1>RESUME</h1>
+        <p>Cell: <a href=#>9444643378</a>
+        <p>Email: <a href=#>mewygf@gmail.com</a>
+        <p id="objective">I am shivani from nalla malla reddy engineering college completed my b-tech in 2024 in the course of cse(aiml)</p>   
+        <dl>
+            <dt id>Education
+            <dd>
+                <h2>college:Nalla malla reddy engineering college</h2>
+                <p> <li>course:cse(aiml)<br/>
+             </li> </p>
+        </dl>
+        <dl>
+            <dt>Skills
+            <dd>
+                <h2>technical Skills</h2>
+                <li>c,html,css,python,dbms</li>
+                <h2>Computer skills</h2>
+                <li>linux,gitLab</li>
+        </dl>
+        
+        <dl>
+            <dt>Hobbies
+            <dd><li>listening to music,Drawing</li>
+        </dl>
+
+    </div>
+    <h3>Educational Qualifications</h3>
+<table>
+    <tr id="heading">
+        <th>Qualification</th>
+        <th>Board</th>
+        <th>Percentage / Grades</th>
+        <th>Year</th>
+    </tr>
+    <tr>
+        <td>S.S.C</td>
+        <td>DPS</td>
+        <td>80%</td>
+        <td>2018</td>
+    </tr>
+    <tr>
+        <td>TSBIE</td>
+        <td>Sri gayatri junior college</td>
+        <td>79%</td>
+        <td>2020</td>
+    </tr>
+    <tr>
+        <td>Autonomous</td>
+        <td> Nalla malla Reddy engineering college</td>
+        <td>74%</td>
+        <td>2024</td>
+    </tr>
+    
+</table>
+</body>
+
+
+</html>
+
+
+
+

@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <script language="javascript">
+            function display()
+            {
+                document.getElementById("displayarea").innerHtml=document.getElementById("user name").value;
+                document.getElementById("username").value="";
+
+                document.getElementById("displayarea").innerHtml=document.getElementById("password").value;
+                document.getElementById("password").value="";
+
+                document.getElementById("displayarea").innerHtml=document.getElementById("phonenumber").value;
+                document.getElementById("phonenumber").value="";
+
+                document.getElementById("displayarea").innerHtml=document.getElementById("age").value;
+                document.getElementById("age").value="";
+                
+            }
+        </script>
+        <script language="javascript">
+            function stongpswd()
+            {
+                var c=document.pf.password;
+                var s1=c.value;
+                var slen=s1.length;
+                var vd=/[^0-9]/g;
+                var vsc=/[a-zA-Z0-9]/g;
+                var vc=/[^a-zA-Z]/g;
+                var ds=s1.replace(vd,"");
+                var ss=s1.replace(vsc,"");
+                var is=s1.replace(vc,"");
+                if(slen>50||slen<6){
+                    alert("password length must blw 5-60 characters")
+                    c.value=""
+                    c.focus();
+                    return false;
+                }
+                if(ss<1)
+                {
+                    alert("password length must include atleast one special characters");
+                    c.value=""
+                    c.focus();
+                    return false;
+                }
+                    if(ds<1)
+                    {
+                        alert("password must include atleat one digit")
+                        c.value=""
+                        c.focus();
+                        return false;
+                    }
+                    else{
+                        display();
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <h2 align="center">Registration</h2>
+        <form id="f1" name="pf">
+            <table align="center" border="5" bordercolor="purple">
+                <tr>
+                    <td>username</td>
+                    <td><input id=username
+                        name="username" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input id=password
+                        name="password" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>phonenumber</td>
+                    <td><input id=phonenumber
+                        name="phonenumber" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td><input id=age
+                        name="age" size="20">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><input id=reg type="submit" onclick="strongpswd();"></td>
+                </tr>
+            </table>
+            <table width="400px" align="center">
+                <tr style="background-color: rgb(65, 37, 94);">
+                    <td align="center"><b>username</b></td>
+                    <td align="center"><b>password</b></td>
+                    <td align="center"><b>phonenumber</b></td>
+                    <td align="center"><b>age</b></td>
+
+
+                </tr>
+                <tr>
+                    <td align="center">
+                      <div id="displayarea"></div>
+                    </td>
+                    <td align="center"><div id="displayarea1"></div></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+
+h1{
+color: rgb(33, 18, 172);
+background-color: rgb(127, 255, 187);
+}
+h2{
+    color: rgb(147, 181, 11);
+
+}
+body{
+    background-color: whitesmoke
+ }
+ .box {
+    margin: auto;
+    width: 1200px;
+    height: 1000px;
+    padding: 10px;
+    border: 5px solid transparent;
+}
