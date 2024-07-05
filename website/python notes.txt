@@ -1,0 +1,65 @@
+1.write a program to find the word starting with "G"
+=>movie=["Gandhi","Gone with the wind","Gattaca","Good will Hunting","Wonderfull","star wars","sun","sample"]
+gmovies=[title for title in movie  if title.startswith("s")]
+print(gmovies)
+o/p:['Gandhi', 'Gone with the wind', 'Gattaca', 'Good will Hunting']
+
+2)string="krishna was born in gokul which is later named as vrindhavan"
+print(string)
+print(len(string))
+print(string[0])
+print(string[-1])
+print(string[::-1])
+print(string[0:19])
+print(string[-19:-5])
+
+3)string="krishna has born in gokul which is later named as vrindhavan"
+print(string)
+list1=list(string)
+list1[8]="w"
+string1="".join(list1)   
+print(string1)
+
+o/p)krishna has born in gokul which is later named as vrindhavan
+krishna was born in gokul which is later named as vrindhavan
+> 
+print(string1)
+
+
+
+
+4)write a python program to find the duplicate items in list ?
+code:
+# Sample list
+my_list = [1, 2, 3, 4, 3, 5, 6, 1, 7, 8, 5]
+
+# Find duplicates using a simple loop
+duplicates = []
+seen_items = set()
+
+for item in my_list:
+    if item in seen_items:
+        duplicates.append(item)
+    else:
+        seen_items.add(item)
+
+print("Duplicates found:", duplicates)
+
+o/p)Duplicates found: [3, 1, 5]
+
+
+5)tuples
+code:
+
+list=[2,3,4]
+print(tuple(list))
+
+tuple=()
+print(tuple)
+
+l=("radha","krishna",12,9.0,8)
+print(l)
+
+Tuple1 = tuple('Geeks')
+print(Tuple1)
+o/p)('G', 'e', 'e', 'k', 's')

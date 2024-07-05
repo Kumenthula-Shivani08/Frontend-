@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sciCalculator.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display" readonly>
+    <div id="keys">
+<button  onClick="sin()">Sin</button>
+<button type="button" value="cos" onClick="cos()">cos</button>
+<button type="button" value="tan" onClick="tan()">tan</button>
+
+<button type="button" value="x^2" onClick="square()">x<sup>2</button>
+<button type="button" value="x^3" onClick="cube()">x<sup>3</sup></button>
+<button type="button" value="sqrt2" onClick="sqrt2()">&radic;</button>
+<button type="button" value="sqrt2" onClick="sqrt2()">&#8731</button>
+<button class="delete" type="button" value="BACKSPC" onClick="BACKSPC()">Del</button>
+
+
+
+
+      <button onClick="appendToDisplay('+')" class="operator-btn">+</button>
+      <button onClick="appendToDisplay('7')">7</button>
+      <button onClick="appendToDisplay('8')">8</button>
+      <button onClick="appendToDisplay('9')">9</button>
+      <button onClick="appendToDisplay('-')" class="operator-btn">-</button>
+      <button onClick="appendToDisplay('4')">4</button>
+      <button onClick="appendToDisplay('5')">5</button>
+      <button onClick="appendToDisplay('6')">6</button>
+      <button onClick="appendToDisplay('*')"class="operator-btn">*</button>
+      <button onClick="appendToDisplay('1')">1</button>
+      <button onClick="appendToDisplay('2')">2</button>
+      <button onClick="appendToDisplay('3')">3</button>
+      <button onClick="appendToDisplay('/')" class="operator-btn">/</button>
+      <button onClick="appendToDisplay('0')">0</button>
+      <button onClick="appendToDisplay('.')">.</button>
+      <button onClick="calculate()">=</button>
+      <button onClick="ClearDisplay()">C</button>
+    </div>
+  </div>
+  <script src="sciCalculator.js"></script>
+</body>
+</html>

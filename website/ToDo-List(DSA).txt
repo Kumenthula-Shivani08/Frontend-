@@ -1,0 +1,23 @@
+JAVA
+ToDo-List
+1.find missing number unsorted list in java leetcode(268).
+2.what is Anagram and Write a code.
+3.Sort custom object using java 8.
+4.Object class & its Methods Available.
+5.Difference blw sleep and Wait (Multithreading).
+->Collections,Stream Api,Multithreading,java 8 features,OOPs concepts (imp)
+->equals hashcode contract
+->diff blw hashset & arraylist
+
+
+->Implement code for comparable and comparator
+->How to handle and manage exceptions?
+->exception handling(imp)
+->what collection will you use to access a list of integers?
+->what is concurrent exception & how to fix it?
+->Design patterns(singleton DP)
+->if there is a multithreaded environment ,how will you achieve synchronisation?
+->synchronisation .
+->HashMaps.
+->Garabage collection.
+->How to make objects unreferenced for Garabage collection.

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+<title>starbucks website Landing page</title>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="file:///C:/Users/HP/Downloads/74798-tea-coffee-cafe-starbucks-png-free-photo.png" width="16%"  class="logo" height="20%"></a>
+
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">What's New</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>   
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just coffee <br> It's <span>StarkBucks</span></h2>
+               <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. 
+                It is the world's largest coffeehouse chain. As of November 2021, the company had 33,833 stores in 80 countries, 15,444 of which were located in the United States. </p>
+            <a href="#">Learn More</a>   
+            
+            </div>
+            <div class="imgBox">
+                <img src="file:///C:/Users/HP/Downloads/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+        <li><a href="#"><img src="file:///C:/Users/HP/Downloads/62120-coffee-frappuccino-drink-latte-starbucks-unicorn.png" onclick="imgSlider(///C:/Users/HP/Downloads/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png);changeCircleCircle('#017143')"></a></li>
+        <li><a href="#"><img src="file:///C:/Users/HP/Downloads/62115-tea-coffee-drink-starbucks-latte-free-download-image.png" onclick="imgSlider(img2.png);changeCircleCircle('#eb74995')"></a></li>
+        <li><a href="#"><img src="file:///C:/Users/HP/Downloads/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" onclick="imgSlider(img3.png);changeCircleCircle('#d752b1')"></a></li>
+
+            </ul>
+         <!-- <ul class="sci">
+            <li><a href="#"><img src="file:///C:/Users/HP/Downloads/69842-logo-computer-facebook-instagram-icons-download-free-image-thumb.png"></a></li>
+            <li><a href="#"><img src="file:///C:/Users/HP/Downloads/34996-2-twitter-transparent.png"></a></li>
+            <li><a href="#"><img src="file:///C:/Users/HP/Downloads/69830-instagram-cinars-fest-logo-ds-songwriters-thumb.png"></a></li>
+
+        </ul>  -->
+
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.starbucks').src="anything";
+                
+            },
+            function changeCircleCircle(color) {
+                const circle = document.querySelector(".circle");
+                circle.style.background = color;
+            }
+              
+        </script>
+    </body>
+
+    </html>
